@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 import sys
+import os
 import torch
 from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import train_test_split
@@ -17,10 +18,10 @@ num_epochs = 10
 folder_path = "graph_files/"
 
 # iterate over all csv files in the folder
-for filename in sys.listdir(folder_path):
+for filename in os.listdir(folder_path):
     if filename.endswith(".csv"):
         # read csv file into pandas dataframe
-        df = pd.read_csv(sys.path.join(folder_path, filename))
+        df = pd.read_csv(os.path.join(folder_path, filename))
 
         # preprocess dataframe and convert to PyTorch tensors
         df.fillna({'tainted': False}, inplace=True)
