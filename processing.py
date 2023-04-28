@@ -9,10 +9,6 @@ from torch.nn.functional import binary_cross_entropy_with_logits
 from torch.optim import Adam
 from torch.nn import Linear, ReLU, Sequential, Sigmoid
 
-# Define the loss function and optimizer
-loss_fn = binary_cross_entropy_with_logits
-optimizer = Adam(model.parameters(), lr=0.001)
-
 # set up batch size and number of epochs
 batch_size = 64
 num_epochs = 10
@@ -53,7 +49,11 @@ for filename in sys.listdir(folder_path):
             Linear(8, 1),
             Sigmoid()
         )
-        
+
+        # Define the loss function and optimizer
+        loss_fn = binary_cross_entropy_with_logits
+        optimizer = Adam(model.parameters(), lr=0.001)
+
         # Split the data into training and validation sets
         X_train, X_val, y_train, y_val = train_test_split(features, target, test_size=0.2)
 
