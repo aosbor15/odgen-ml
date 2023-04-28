@@ -9,17 +9,6 @@ from torch.nn.functional import binary_cross_entropy_with_logits
 from torch.optim import Adam
 from torch.nn import Linear, ReLU, Sequential, Sigmoid
 
-# define your GNN model and loss function
-# Define the neural network model
-model = Sequential(
-    Linear(features.shape[1], 16),
-    ReLU(),
-    Linear(16, 8),
-    ReLU(),
-    Linear(8, 1),
-    Sigmoid()
-)
-
 # Define the loss function and optimizer
 loss_fn = binary_cross_entropy_with_logits
 optimizer = Adam(model.parameters(), lr=0.001)
@@ -55,6 +44,15 @@ for filename in sys.listdir(folder_path):
         features = df[['source', 'dest', 'edge_type', 'source_name', 'source_type', 'lineno:int', 'endlineno:int', 'childnum:int', 'code']].astype('float32').to_numpy()
         
         target = df['tainted'].astype('float32').to_numpy()
+        # Define the neural network model
+        model = Sequential(
+            Linear(features.shape[1], 16),
+            ReLU(),
+            Linear(16, 8),
+            ReLU(),
+            Linear(8, 1),
+            Sigmoid()
+        )
         
         # Split the data into training and validation sets
         X_train, X_val, y_train, y_val = train_test_split(features, target, test_size=0.2)
