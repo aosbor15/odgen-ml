@@ -41,6 +41,7 @@ for filename in os.listdir(folder_path):
         features = df[['source', 'dest', 'edge_type', 'source_name', 'source_type', 'lineno:int', 'endlineno:int', 'childnum:int', 'code']].astype('float32').to_numpy()
         
         target = df['tainted'].astype('float32').to_numpy()
+        
         # Define the neural network model
         model = Sequential(
             Linear(features.shape[1], 16),
@@ -72,7 +73,7 @@ for filename in os.listdir(folder_path):
                 optimizer.zero_grad()
 
                 # forward pass
-                y_pred = model(X_batch)
+                y_pred = model(X_batch).squeeze()
 
                 # calculate loss
                 loss = loss_fn(y_pred, y_batch)
