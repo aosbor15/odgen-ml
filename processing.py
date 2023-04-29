@@ -21,7 +21,7 @@ folder_path = "graph_files/"
 for filename in os.listdir(folder_path):
     if filename.endswith(".csv"):
         # read csv file into pandas dataframe
-        df = pd.read_csv(os.path.join(folder_path, filename))
+        df = pd.read_csv(os.path.join(folder_path, filename), low_memory=False)
 
         # preprocess dataframe and convert to PyTorch tensors
         df.fillna({'tainted': False}, inplace=True)
@@ -61,11 +61,12 @@ for filename in os.listdir(folder_path):
 
         # Convert the data to PyTorch tensors and create a DataLoader
         train_data = TensorDataset(torch.from_numpy(X_train), torch.from_numpy(y_train))
-        train_loader = DataLoader(train_data, batch_size=32, shuffle=True)
+        train_loader = DataLoader(train_data, batch_size=batch_size, shuffle=True)
 
         val_dataset = TensorDataset(torch.from_numpy(X_val), torch.from_numpy(y_val))
         val_loader = DataLoader(val_dataset, batch_size=batch_size, shuffle=True)
 
+        print(filename, file=open('output.txt', 'a'))
         # train model on current dataset
         for epoch in range(num_epochs):
             for i, (X_batch, y_batch) in enumerate(train_loader):
@@ -86,13 +87,13 @@ for filename in os.listdir(folder_path):
             with torch.no_grad():
                 model.eval()
                 val_loss = 0
-                for data in val_loader:
-                    y_pred_val = model(X_val)
+                for X_val, y_val in val_loader:
+                    y_pred_val = model(X_val).squeeze()
                     val_loss += loss_fn(y_pred_val, y_val).item()
                 val_loss /= len(val_loader)
 
             # print progress
-            print(f"Epoch {epoch+1}/{num_epochs} | Train Loss: {loss.item():.4f} | Val Loss: {val_loss:.4f}")
+            print(f"Epoch {epoch+1}/{num_epochs} | Train Loss: {loss.item():.4f} | Val Loss: {val_loss:.4f}", file=open('output.txt', 'a'))
 
         # save trained model for current dataset
         torch.save(model.state_dict(), f"{filename[:-4]}_model.pth")

@@ -1,0 +1,819 @@
+id:ID	labels:label	type	flags:string[]	lineno:int	code	childnum:int	funcid:int	classname	namespace	endlineno:int	name	doccomment	export	tainted
+0	Filesystem	File									stdin		True	
+1	AST	AST_TOPLEVEL	TOPLEVEL_FILE	1					1::1:56	1	stdin		True	
+2	Artificial	CFG_FUNC_ENTRY					1				stdin		True	
+3	Artificial	CFG_FUNC_EXIT					1				stdin		True	
+4	AST	AST_STMT_LIST		1		0	1		1::1:56	1			True	
+5	AST	AST_ASSIGN		1	main_func=require('./node_modules/node-serialize/')	0	1		1:4:1:55	1			True	
+6	AST	AST_VAR	JS_DECL_VAR	1		0	1		1:4:1:13	1			True	
+7	AST	string		1	main_func	0	1		1:4:1:13	1	main_func		True	
+8	AST	AST_CALL	JS_REQUIRE_EXTERNAL	1	require('./node_modules/node-serialize/')	1	1		1:14:1:55	1	/home/alex/ODGen/node_modules/node-serialize/lib/serialize.js		True	
+9	AST	AST_NAME	NAME_NOT_FQ	1		0	1		1:14:1:55	1			True	
+10	AST	string		1	require	0	1		1:14:1:21	1			True	
+11	AST	AST_ARG_LIST		1	('./node_modules/node-serialize/')	1	1		1:14:1:55	1			True	
+12	AST	string		1	./node_modules/node-serialize/	0	1		1:22:1:54	1			True	
+13	Filesystem	File									/home/alex/ODGen/node_modules/node-serialize/lib/serialize.js		True	
+14	AST	AST_TOPLEVEL	TOPLEVEL_FILE	1					1::90:2	90	/home/alex/ODGen/node_modules/node-serialize/lib/serialize.js		True	
+15	Artificial	CFG_FUNC_ENTRY					14				/home/alex/ODGen/node_modules/node-serialize/lib/serialize.js		True	
+16	Artificial	CFG_FUNC_EXIT					14				/home/alex/ODGen/node_modules/node-serialize/lib/serialize.js		True	
+17	AST	AST_STMT_LIST		1		0	14		1::90:2	90			True	
+18	AST	AST_ASSIGN		1	FUNCFLAG = '_$$ND_FUNC$$_'	0	14		1:4:1:30	1			True	
+19	AST	AST_VAR	JS_DECL_VAR	1		0	14		1:4:1:12	1			True	
+20	AST	string		1	FUNCFLAG	0	14		1:4:1:12	1	FUNCFLAG		True	
+21	AST	string		1	_$$ND_FUNC$$_	1	14		1:15:1:30	1			True	
+22	AST	AST_ASSIGN		2	CIRCULARFLAG = '_$$ND_CC$$_'	1	14		2:4:2:32	2			True	
+23	AST	AST_VAR	JS_DECL_VAR	2		0	14		2:4:2:16	2			True	
+24	AST	string		2	CIRCULARFLAG	0	14		2:4:2:16	2	CIRCULARFLAG		True	
+25	AST	string		2	_$$ND_CC$$_	1	14		2:19:2:32	2			True	
+26	AST	AST_ASSIGN		3	KEYPATHSEPARATOR = '_$$.$$_'	2	14		3:4:3:32	3			True	
+27	AST	AST_VAR	JS_DECL_VAR	3		0	14		3:4:3:20	3			True	
+28	AST	string		3	KEYPATHSEPARATOR	0	14		3:4:3:20	3	KEYPATHSEPARATOR		True	
+29	AST	string		3	_$$.$$_	1	14		3:23:3:32	3			True	
+30	AST	AST_ASSIGN		4	ISNATIVEFUNC = /^function\\s*[^(]*\\(.*\\)\\s*\\{\\s*\\[native code\\]\\s*\\}$/	3	14		4:4:4:73	4			True	
+31	AST	AST_VAR	JS_DECL_VAR	4		0	14		4:4:4:16	4			True	
+32	AST	string		4	ISNATIVEFUNC	0	14		4:4:4:16	4	ISNATIVEFUNC		True	
+33	AST	string	JS_REGEXP	4	/^function\\s*[^(]*\\(.*\\)\\s*\\{\\s*\\[native code\\]\\s*\\}$/	1	14		4:19:4:73	4			True	
+34	AST	AST_ASSIGN		6	getKeyPath = function(obj, path) {  path = path.split(KEYPATHSEPARATOR);  var currentObj = obj;  path.forEach(function(p, index) {    if (index) {      currentObj = currentObj[p];    }  });  return currentObj;}	4	14		6:4:15:1	15			True	
+35	AST	AST_VAR	JS_DECL_VAR	6		0	14		6:4:6:14	6			True	
+36	AST	string		6	getKeyPath	0	14		6:4:6:14	6	getKeyPath		True	
+37	AST	AST_CLOSURE		6		1	14		6:17:15:1	15			True	
+38	Artificial	CFG_FUNC_ENTRY					37						True	
+39	Artificial	CFG_FUNC_EXIT					37						True	
+40	AST	string		6	{anon}	0	37		6::6:				True	
+41	AST	NULL		6		1	37		6::6:				True	
+42	AST	AST_PARAM_LIST		6	obj, path	2	37		6:17:15:1	15			True	
+43	AST	AST_PARAM		6	obj	0	37		6::6:				True	
+44	AST	NULL		6	any	0	37		6::6:				True	
+45	AST	string		6	obj	1	37		6:26:6:29	6			True	
+46	AST	NULL		6	any	2	37		6::6:				True	
+47	AST	AST_PARAM		6	path	1	37		6::6:				True	
+48	AST	NULL		6	any	0	37		6::6:				True	
+49	AST	string		6	path	1	37		6:31:6:35	6			True	
+50	AST	NULL		6	any	2	37		6::6:				True	
+51	AST	NULL		6		3	37		6::6:				True	
+52	AST	AST_STMT_LIST		6		4	37		6:37:15:1	15			True	
+53	AST	AST_ASSIGN		7	path = path.split(KEYPATHSEPARATOR)	0	37		7:2:7:37	7			True	
+54	AST	AST_VAR		7		0	37		7:2:7:6	7			True	
+55	AST	string		7	path	0	37		7:2:7:6	7	path		True	
+56	AST	AST_METHOD_CALL		7	path.split(KEYPATHSEPARATOR)	1	37		7:9:7:37	7			True	
+57	AST	AST_VAR		7		0	37		7:9:7:13	7			True	
+58	AST	string		7	path	0	37		7:9:7:13	7	path		True	
+59	AST	string		7	split	1	37		7:14:7:19	7			True	
+60	AST	AST_ARG_LIST		7	(KEYPATHSEPARATOR)	2	37		7:9:7:37	7			True	
+61	AST	AST_VAR		7		0	37		7:20:7:36	7			True	
+62	AST	string		7	KEYPATHSEPARATOR	0	37		7:20:7:36	7	KEYPATHSEPARATOR		True	
+63	AST	AST_ASSIGN		8	currentObj = obj	1	37		8:6:8:22	8			True	
+64	AST	AST_VAR	JS_DECL_VAR	8		0	37		8:6:8:16	8			True	
+65	AST	string		8	currentObj	0	37		8:6:8:16	8	currentObj		True	
+66	AST	AST_VAR		8		1	37		8:19:8:22	8			True	
+67	AST	string		8	obj	0	37		8:19:8:22	8	obj		True	
+68	AST	AST_METHOD_CALL		9	path.forEach(function(p, index) {    if (index) {      currentObj = currentObj[p];    }  })	2	37		9:2:13:4	13			True	
+69	AST	AST_VAR		9		0	37		9:2:9:6	9			True	
+70	AST	string		9	path	0	37		9:2:9:6	9	path		True	
+71	AST	string		9	forEach	1	37		9:7:9:14	9			True	
+72	AST	AST_ARG_LIST		9		2	37		9:2:13:4	13			True	
+73	AST	AST_CLOSURE		9		0	37		9:15:13:3	13			True	
+74	Artificial	CFG_FUNC_ENTRY					73						True	
+75	Artificial	CFG_FUNC_EXIT					73						True	
+76	AST	string		9	{anon}	0	73		9::9:				True	
+77	AST	NULL		9		1	73		9::9:				True	
+78	AST	AST_PARAM_LIST		9	p, index	2	73		9:15:13:3	13			True	
+79	AST	AST_PARAM		9	p	0	73		9::9:				True	
+80	AST	NULL		9	any	0	73		9::9:				True	
+81	AST	string		9	p	1	73		9:24:9:25	9			True	
+82	AST	NULL		9	any	2	73		9::9:				True	
+83	AST	AST_PARAM		9	index	1	73		9::9:				True	
+84	AST	NULL		9	any	0	73		9::9:				True	
+85	AST	string		9	index	1	73		9:27:9:32	9			True	
+86	AST	NULL		9	any	2	73		9::9:				True	
+87	AST	NULL		9		3	73		9::9:				True	
+88	AST	AST_STMT_LIST		9		4	73		9:34:13:3	13			True	
+89	AST	AST_IF		10		0	73		10:4:12:5	12			True	
+90	AST	AST_IF_ELEM		10		0	73		10:4:12:5	12			True	
+91	AST	AST_VAR		10		0	73		10:8:10:13	10			True	
+92	AST	string		10	index	0	73		10:8:10:13	10	index		True	
+93	AST	AST_STMT_LIST		10		1	73		10:15:12:5	12			True	
+94	AST	AST_ASSIGN		11	currentObj = currentObj[p]	0	73		11:6:11:32	11			True	
+95	AST	AST_VAR		11		0	73		11:6:11:16	11			True	
+96	AST	string		11	currentObj	0	73		11:6:11:16	11	currentObj		True	
+97	AST	AST_DIM		11	currentObj[p]	1	73		11:19:11:32	11			True	
+98	AST	AST_VAR		11		0	73		11:19:11:29	11			True	
+99	AST	string		11	currentObj	0	73		11:19:11:29	11	currentObj		True	
+100	AST	AST_VAR		11		1	73		11:30:11:31	11			True	
+101	AST	string		11	p	0	73		11:30:11:31	11	p		True	
+102	AST	NULL		9		5	73		9::9:				True	
+103	AST	NULL		9		6	73		9::9:				True	
+104	AST	AST_RETURN		14	return currentObj;	3	37		14:2:14:20	14			True	
+105	AST	AST_VAR		14		0	37		14:9:14:19	14			True	
+106	AST	string		14	currentObj	0	37		14:9:14:19	14	currentObj		True	
+107	AST	NULL		6		5	37		6::6:				True	
+108	AST	NULL		6		6	37		6::6:				True	
+109	AST	AST_ASSIGN		17	exports.serialize = function(obj, ignoreNativeFunc, outputObj, cache, path) {  path = path || '$';  cache = cache || {};  cache[path] = obj;  outputObj = outputObj || {};  var key;  for(key in obj) {    if(obj.hasOwnProperty(key)) {      if(typeof obj[key] === 'object' && obj[key] !== null) {        var subKey;        var found = false;        for(subKey in cache) {          if (cache.hasOwnProperty(subKey)) {            if (cache[subKey] === obj[key]) {              outputObj[key] = CIRCULARFLAG + subKey;              found = true;            }          }        }        if (!found) {          outputObj[key] = exports.serialize(obj[key], ignoreNativeFunc, outputObj[key], cache, path + KEYPATHSEPARATOR + key);        }      } else if(typeof obj[key] === 'function') {        var funcStr = obj[key].toString();        if(ISNATIVEFUNC.test(funcStr)) {          if(ignoreNativeFunc) {            funcStr = 'function() {throw new Error(\"Call a native function unserialized\")}';          } else {            throw new E	5	14		17::57:1	57			True	
+110	AST	AST_PROP		17	exports.serialize	0	14		17::17:17	17			True	
+111	AST	AST_VAR		17		0	14		17::17:7	17			True	
+112	AST	string		17	exports	0	14		17::17:7	17	exports		True	
+113	AST	string		17	serialize	1	14		17:8:17:17	17			True	
+114	AST	AST_CLOSURE		17		1	14		17:20:57:1	57			True	
+115	Artificial	CFG_FUNC_ENTRY					114						True	
+116	Artificial	CFG_FUNC_EXIT					114						True	
+117	AST	string		17	{anon}	0	114		17::17:				True	
+118	AST	NULL		17		1	114		17::17:				True	
+119	AST	AST_PARAM_LIST		17	obj, ignoreNativeFunc, outputObj, cache, path	2	114		17:20:57:1	57			True	
+120	AST	AST_PARAM		17	obj	0	114		17::17:				True	
+121	AST	NULL		17	any	0	114		17::17:				True	
+122	AST	string		17	obj	1	114		17:29:17:32	17			True	
+123	AST	NULL		17	any	2	114		17::17:				True	
+124	AST	AST_PARAM		17	ignoreNativeFunc	1	114		17::17:				True	
+125	AST	NULL		17	any	0	114		17::17:				True	
+126	AST	string		17	ignoreNativeFunc	1	114		17:34:17:50	17			True	
+127	AST	NULL		17	any	2	114		17::17:				True	
+128	AST	AST_PARAM		17	outputObj	2	114		17::17:				True	
+129	AST	NULL		17	any	0	114		17::17:				True	
+130	AST	string		17	outputObj	1	114		17:52:17:61	17			True	
+131	AST	NULL		17	any	2	114		17::17:				True	
+132	AST	AST_PARAM		17	cache	3	114		17::17:				True	
+133	AST	NULL		17	any	0	114		17::17:				True	
+134	AST	string		17	cache	1	114		17:63:17:68	17			True	
+135	AST	NULL		17	any	2	114		17::17:				True	
+136	AST	AST_PARAM		17	path	4	114		17::17:				True	
+137	AST	NULL		17	any	0	114		17::17:				True	
+138	AST	string		17	path	1	114		17:70:17:74	17			True	
+139	AST	NULL		17	any	2	114		17::17:				True	
+140	AST	NULL		17		3	114		17::17:				True	
+141	AST	AST_STMT_LIST		17		4	114		17:76:57:1	57			True	
+142	AST	AST_ASSIGN		18	path = path || '$'	0	114		18:2:18:20	18			True	
+143	AST	AST_VAR		18		0	114		18:2:18:6	18			True	
+144	AST	string		18	path	0	114		18:2:18:6	18	path		True	
+145	AST	AST_BINARY_OP	BINARY_BOOL_OR	18	path || '$'	1	114		18:9:18:20	18			True	
+146	AST	AST_VAR		18		0	114		18:9:18:13	18			True	
+147	AST	string		18	path	0	114		18:9:18:13	18	path		True	
+148	AST	string		18	$	1	114		18:17:18:20	18			True	
+149	AST	AST_ASSIGN		19	cache = cache || {}	1	114		19:2:19:21	19			True	
+150	AST	AST_VAR		19		0	114		19:2:19:7	19			True	
+151	AST	string		19	cache	0	114		19:2:19:7	19	cache		True	
+152	AST	AST_BINARY_OP	BINARY_BOOL_OR	19	cache || {}	1	114		19:10:19:21	19			True	
+153	AST	AST_VAR		19		0	114		19:10:19:15	19			True	
+154	AST	string		19	cache	0	114		19:10:19:15	19	cache		True	
+155	AST	AST_ARRAY	JS_OBJECT	19		1	114		19:19:19:21	19			True	
+156	AST	AST_ASSIGN		20	cache[path] = obj	2	114		20:2:20:19	20			True	
+157	AST	AST_DIM		20	cache[path]	0	114		20:2:20:13	20			True	
+158	AST	AST_VAR		20		0	114		20:2:20:7	20			True	
+159	AST	string		20	cache	0	114		20:2:20:7	20	cache		True	
+160	AST	AST_VAR		20		1	114		20:8:20:12	20			True	
+161	AST	string		20	path	0	114		20:8:20:12	20	path		True	
+162	AST	AST_VAR		20		1	114		20:16:20:19	20			True	
+163	AST	string		20	obj	0	114		20:16:20:19	20	obj		True	
+164	AST	AST_ASSIGN		21	outputObj = outputObj || {}	3	114		21:2:21:29	21			True	
+165	AST	AST_VAR		21		0	114		21:2:21:11	21			True	
+166	AST	string		21	outputObj	0	114		21:2:21:11	21	outputObj		True	
+167	AST	AST_BINARY_OP	BINARY_BOOL_OR	21	outputObj || {}	1	114		21:14:21:29	21			True	
+168	AST	AST_VAR		21		0	114		21:14:21:23	21			True	
+169	AST	string		21	outputObj	0	114		21:14:21:23	21	outputObj		True	
+170	AST	AST_ARRAY	JS_OBJECT	21		1	114		21:27:21:29	21			True	
+171	AST	AST_ASSIGN		23	key	4	114		23:6:23:9	23			True	
+172	AST	AST_VAR	JS_DECL_VAR	23		0	114		23:6:23:9	23			True	
+173	AST	string		23	key	0	114		23:6:23:9	23	key		True	
+174	AST	AST_FOREACH	JS_FOR_IN	24		5	114		24:2:54:3	54			True	
+175	AST	AST_VAR		24		0	114		24:13:24:16	24			True	
+176	AST	string		24	obj	0	114		24:13:24:16	24	obj		True	
+177	AST	NULL		24		1	114		24::24:				True	
+178	AST	AST_VAR		24		2	114		24::24:				True	
+179	AST	string		24	key	0	114		24::24:		key		True	
+180	AST	AST_STMT_LIST		24		3	114		24:18:54:3	54			True	
+181	AST	AST_IF		25		0	114		25:4:53:5	53			True	
+182	AST	AST_IF_ELEM		25		0	114		25:4:53:5	53			True	
+183	AST	AST_METHOD_CALL		25	obj.hasOwnProperty(key)	0	114		25:7:25:30	25			True	
+184	AST	AST_VAR		25		0	114		25:7:25:10	25			True	
+185	AST	string		25	obj	0	114		25:7:25:10	25	obj		True	
+186	AST	string		25	hasOwnProperty	1	114		25:11:25:25	25			True	
+187	AST	AST_ARG_LIST		25	(key)	2	114		25:7:25:30	25			True	
+188	AST	AST_VAR		25		0	114		25:26:25:29	25			True	
+189	AST	string		25	key	0	114		25:26:25:29	25	key		True	
+190	AST	AST_STMT_LIST		25		1	114		25:32:53:5	53			True	
+191	AST	AST_IF		26		0	114		26:6:52:7	52			True	
+192	AST	AST_IF_ELEM		26		0	114		26:6:52:7	52			True	
+193	AST	AST_BINARY_OP	BINARY_BOOL_AND	26	typeof obj[key] === 'object' && obj[key] !== null	0	114		26:9:26:58	26			True	
+194	AST	AST_BINARY_OP	BINARY_IS_IDENTICAL	26	typeof obj[key] === 'object'	0	114		26:9:26:37	26			True	
+195	AST	AST_CALL	JS_TYPEOF	26	typeof obj[key]	0	114		26:9:26:24	26			True	
+196	AST	AST_NAME	NAME_NOT_FQ	26		0	114		26:9:26:24	26			True	
+197	AST	string		26	gettype	0	114		26:9:26:24	26			True	
+198	AST	AST_ARG_LIST		26		1	114		26:9:26:24	26			True	
+199	AST	AST_DIM		26	obj[key]	0	114		26:16:26:24	26			True	
+200	AST	AST_VAR		26		0	114		26:16:26:19	26			True	
+201	AST	string		26	obj	0	114		26:16:26:19	26	obj		True	
+202	AST	AST_VAR		26		1	114		26:20:26:23	26			True	
+203	AST	string		26	key	0	114		26:20:26:23	26	key		True	
+204	AST	string		26	object	1	114		26:29:26:37	26			True	
+205	AST	AST_BINARY_OP	BINARY_IS_NOT_IDENTICAL	26	obj[key] !== null	1	114		26:41:26:58	26			True	
+206	AST	AST_DIM		26	obj[key]	0	114		26:41:26:49	26			True	
+207	AST	AST_VAR		26		0	114		26:41:26:44	26			True	
+208	AST	string		26	obj	0	114		26:41:26:44	26	obj		True	
+209	AST	AST_VAR		26		1	114		26:45:26:48	26			True	
+210	AST	string		26	key	0	114		26:45:26:48	26	key		True	
+211	AST	AST_CONST		26	null	1	114		26::26:				True	
+212	AST	AST_NAME	NAME_NOT_FQ	26	null	0	114		26::26:				True	
+213	AST	string		26	null	0	114		26::26:				True	
+214	AST	AST_STMT_LIST		26		1	114		26:60:40:7	40			True	
+215	AST	AST_ASSIGN		27	subKey	0	114		27:12:27:18	27			True	
+216	AST	AST_VAR	JS_DECL_VAR	27		0	114		27:12:27:18	27			True	
+217	AST	string		27	subKey	0	114		27:12:27:18	27	subKey		True	
+218	AST	AST_ASSIGN		28	found = false	1	114		28:12:28:25	28			True	
+219	AST	AST_VAR	JS_DECL_VAR	28		0	114		28:12:28:17	28			True	
+220	AST	string		28	found	0	114		28:12:28:17	28	found		True	
+221	AST	AST_CONST		28	false	1	114		28::28:				True	
+222	AST	AST_NAME	NAME_NOT_FQ	28	false	0	114		28::28:				True	
+223	AST	string		28	false	0	114		28::28:				True	
+224	AST	AST_FOREACH	JS_FOR_IN	29		2	114		29:8:36:9	36			True	
+225	AST	AST_VAR		29		0	114		29:22:29:27	29			True	
+226	AST	string		29	cache	0	114		29:22:29:27	29	cache		True	
+227	AST	NULL		29		1	114		29::29:				True	
+228	AST	AST_VAR		29		2	114		29::29:				True	
+229	AST	string		29	subKey	0	114		29::29:		subKey		True	
+230	AST	AST_STMT_LIST		29		3	114		29:29:36:9	36			True	
+231	AST	AST_IF		30		0	114		30:10:35:11	35			True	
+232	AST	AST_IF_ELEM		30		0	114		30:10:35:11	35			True	
+233	AST	AST_METHOD_CALL		30	cache.hasOwnProperty(subKey)	0	114		30:14:30:42	30			True	
+234	AST	AST_VAR		30		0	114		30:14:30:19	30			True	
+235	AST	string		30	cache	0	114		30:14:30:19	30	cache		True	
+236	AST	string		30	hasOwnProperty	1	114		30:20:30:34	30			True	
+237	AST	AST_ARG_LIST		30	(subKey)	2	114		30:14:30:42	30			True	
+238	AST	AST_VAR		30		0	114		30:35:30:41	30			True	
+239	AST	string		30	subKey	0	114		30:35:30:41	30	subKey		True	
+240	AST	AST_STMT_LIST		30		1	114		30:44:35:11	35			True	
+241	AST	AST_IF		31		0	114		31:12:34:13	34			True	
+242	AST	AST_IF_ELEM		31		0	114		31:12:34:13	34			True	
+243	AST	AST_BINARY_OP	BINARY_IS_IDENTICAL	31	cache[subKey] === obj[key]	0	114		31:16:31:42	31			True	
+244	AST	AST_DIM		31	cache[subKey]	0	114		31:16:31:29	31			True	
+245	AST	AST_VAR		31		0	114		31:16:31:21	31			True	
+246	AST	string		31	cache	0	114		31:16:31:21	31	cache		True	
+247	AST	AST_VAR		31		1	114		31:22:31:28	31			True	
+248	AST	string		31	subKey	0	114		31:22:31:28	31	subKey		True	
+249	AST	AST_DIM		31	obj[key]	1	114		31:34:31:42	31			True	
+250	AST	AST_VAR		31		0	114		31:34:31:37	31			True	
+251	AST	string		31	obj	0	114		31:34:31:37	31	obj		True	
+252	AST	AST_VAR		31		1	114		31:38:31:41	31			True	
+253	AST	string		31	key	0	114		31:38:31:41	31	key		True	
+254	AST	AST_STMT_LIST		31		1	114		31:44:34:13	34			True	
+255	AST	AST_ASSIGN		32	outputObj[key] = CIRCULARFLAG + subKey	0	114		32:14:32:52	32			True	
+256	AST	AST_DIM		32	outputObj[key]	0	114		32:14:32:28	32			True	
+257	AST	AST_VAR		32		0	114		32:14:32:23	32			True	
+258	AST	string		32	outputObj	0	114		32:14:32:23	32	outputObj		True	
+259	AST	AST_VAR		32		1	114		32:24:32:27	32			True	
+260	AST	string		32	key	0	114		32:24:32:27	32	key		True	
+261	AST	AST_BINARY_OP	BINARY_ADD	32	CIRCULARFLAG + subKey	1	114		32:31:32:52	32			True	
+262	AST	AST_VAR		32		0	114		32:31:32:43	32			True	
+263	AST	string		32	CIRCULARFLAG	0	114		32:31:32:43	32	CIRCULARFLAG		True	
+264	AST	AST_VAR		32		1	114		32:46:32:52	32			True	
+265	AST	string		32	subKey	0	114		32:46:32:52	32	subKey		True	
+266	AST	AST_ASSIGN		33	found = true	1	114		33:14:33:26	33			True	
+267	AST	AST_VAR		33		0	114		33:14:33:19	33			True	
+268	AST	string		33	found	0	114		33:14:33:19	33	found		True	
+269	AST	AST_CONST		33	true	1	114		33::33:				True	
+270	AST	AST_NAME	NAME_NOT_FQ	33	true	0	114		33::33:				True	
+271	AST	string		33	true	0	114		33::33:				True	
+272	AST	AST_IF		37		3	114		37:8:39:9	39			True	
+273	AST	AST_IF_ELEM		37		0	114		37:8:39:9	39			True	
+274	AST	AST_UNARY_OP	UNARY_BOOL_NOT	37	!found	0	114		37:12:37:18	37			True	
+275	AST	AST_VAR		37		0	114		37:13:37:18	37			True	
+276	AST	string		37	found	0	114		37:13:37:18	37	found		True	
+277	AST	AST_STMT_LIST		37		1	114		37:20:39:9	39			True	
+278	AST	AST_ASSIGN		38	outputObj[key] = exports.serialize(obj[key], ignoreNativeFunc, outputObj[key], cache, path + KEYPATHSEPARATOR + key)	0	114		38:10:38:126	38			True	
+279	AST	AST_DIM		38	outputObj[key]	0	114		38:10:38:24	38			True	
+280	AST	AST_VAR		38		0	114		38:10:38:19	38			True	
+281	AST	string		38	outputObj	0	114		38:10:38:19	38	outputObj		True	
+282	AST	AST_VAR		38		1	114		38:20:38:23	38			True	
+283	AST	string		38	key	0	114		38:20:38:23	38	key		True	
+284	AST	AST_METHOD_CALL		38	exports.serialize(obj[key], ignoreNativeFunc, outputObj[key], cache, path + KEYPATHSEPARATOR + key)	1	114		38:27:38:126	38			True	
+285	AST	AST_VAR		38		0	114		38:27:38:34	38			True	
+286	AST	string		38	exports	0	114		38:27:38:34	38	exports		True	
+287	AST	string		38	serialize	1	114		38:35:38:44	38			True	
+288	AST	AST_ARG_LIST		38	(obj[key], ignoreNativeFunc, outputObj[key], cache, path + KEYPATHSEPARATOR + key)	2	114		38:27:38:126	38			True	
+289	AST	AST_DIM		38	obj[key]	0	114		38:45:38:53	38			True	
+290	AST	AST_VAR		38		0	114		38:45:38:48	38			True	
+291	AST	string		38	obj	0	114		38:45:38:48	38	obj		True	
+292	AST	AST_VAR		38		1	114		38:49:38:52	38			True	
+293	AST	string		38	key	0	114		38:49:38:52	38	key		True	
+294	AST	AST_VAR		38		1	114		38:55:38:71	38			True	
+295	AST	string		38	ignoreNativeFunc	0	114		38:55:38:71	38	ignoreNativeFunc		True	
+296	AST	AST_DIM		38	outputObj[key]	2	114		38:73:38:87	38			True	
+297	AST	AST_VAR		38		0	114		38:73:38:82	38			True	
+298	AST	string		38	outputObj	0	114		38:73:38:82	38	outputObj		True	
+299	AST	AST_VAR		38		1	114		38:83:38:86	38			True	
+300	AST	string		38	key	0	114		38:83:38:86	38	key		True	
+301	AST	AST_VAR		38		3	114		38:89:38:94	38			True	
+302	AST	string		38	cache	0	114		38:89:38:94	38	cache		True	
+303	AST	AST_BINARY_OP	BINARY_ADD	38	path + KEYPATHSEPARATOR + key	4	114		38:96:38:125	38			True	
+304	AST	AST_BINARY_OP	BINARY_ADD	38	path + KEYPATHSEPARATOR	0	114		38:96:38:119	38			True	
+305	AST	AST_VAR		38		0	114		38:96:38:100	38			True	
+306	AST	string		38	path	0	114		38:96:38:100	38	path		True	
+307	AST	AST_VAR		38		1	114		38:103:38:119	38			True	
+308	AST	string		38	KEYPATHSEPARATOR	0	114		38:103:38:119	38	KEYPATHSEPARATOR		True	
+309	AST	AST_VAR		38		1	114		38:122:38:125	38			True	
+310	AST	string		38	key	0	114		38:122:38:125	38	key		True	
+311	AST	AST_IF_ELEM		26		1	114		26:6:52:7	52			True	
+312	AST	NULL		26		0	114		26::26:				True	
+313	AST	AST_STMT_LIST		40		1	114		40:13:52:7	52			True	
+314	AST	AST_IF		40		0	114		40:13:52:7	52			True	
+315	AST	AST_IF_ELEM		40		0	114		40:13:52:7	52			True	
+316	AST	AST_BINARY_OP	BINARY_IS_IDENTICAL	40	typeof obj[key] === 'function'	0	114		40:16:40:46	40			True	
+317	AST	AST_CALL	JS_TYPEOF	40	typeof obj[key]	0	114		40:16:40:31	40			True	
+318	AST	AST_NAME	NAME_NOT_FQ	40		0	114		40:16:40:31	40			True	
+319	AST	string		40	gettype	0	114		40:16:40:31	40			True	
+320	AST	AST_ARG_LIST		40		1	114		40:16:40:31	40			True	
+321	AST	AST_DIM		40	obj[key]	0	114		40:23:40:31	40			True	
+322	AST	AST_VAR		40		0	114		40:23:40:26	40			True	
+323	AST	string		40	obj	0	114		40:23:40:26	40	obj		True	
+324	AST	AST_VAR		40		1	114		40:27:40:30	40			True	
+325	AST	string		40	key	0	114		40:27:40:30	40	key		True	
+326	AST	string		40	function	1	114		40:36:40:46	40			True	
+327	AST	AST_STMT_LIST		40		1	114		40:48:50:7	50			True	
+328	AST	AST_ASSIGN		41	funcStr = obj[key].toString()	0	114		41:12:41:41	41			True	
+329	AST	AST_VAR	JS_DECL_VAR	41		0	114		41:12:41:19	41			True	
+330	AST	string		41	funcStr	0	114		41:12:41:19	41	funcStr		True	
+331	AST	AST_METHOD_CALL		41	obj[key].toString()	1	114		41:22:41:41	41			True	
+332	AST	AST_DIM		41	obj[key]	0	114		41:22:41:30	41			True	
+333	AST	AST_VAR		41		0	114		41:22:41:25	41			True	
+334	AST	string		41	obj	0	114		41:22:41:25	41	obj		True	
+335	AST	AST_VAR		41		1	114		41:26:41:29	41			True	
+336	AST	string		41	key	0	114		41:26:41:29	41	key		True	
+337	AST	string		41	toString	1	114		41:31:41:39	41			True	
+338	AST	AST_ARG_LIST		41	()	2	114		41:22:41:41	41			True	
+339	AST	AST_IF		42		1	114		42:8:48:9	48			True	
+340	AST	AST_IF_ELEM		42		0	114		42:8:48:9	48			True	
+341	AST	AST_METHOD_CALL		42	ISNATIVEFUNC.test(funcStr)	0	114		42:11:42:37	42			True	
+342	AST	AST_VAR		42		0	114		42:11:42:23	42			True	
+343	AST	string		42	ISNATIVEFUNC	0	114		42:11:42:23	42	ISNATIVEFUNC		True	
+344	AST	string		42	test	1	114		42:24:42:28	42			True	
+345	AST	AST_ARG_LIST		42	(funcStr)	2	114		42:11:42:37	42			True	
+346	AST	AST_VAR		42		0	114		42:29:42:36	42			True	
+347	AST	string		42	funcStr	0	114		42:29:42:36	42	funcStr		True	
+348	AST	AST_STMT_LIST		42		1	114		42:39:48:9	48			True	
+349	AST	AST_IF		43		0	114		43:10:47:11	47			True	
+350	AST	AST_IF_ELEM		43		0	114		43:10:47:11	47			True	
+351	AST	AST_VAR		43		0	114		43:13:43:29	43			True	
+352	AST	string		43	ignoreNativeFunc	0	114		43:13:43:29	43	ignoreNativeFunc		True	
+353	AST	AST_STMT_LIST		43		1	114		43:31:45:11	45			True	
+354	AST	AST_ASSIGN		44	funcStr = 'function() {throw new Error(\"Call a native function unserialized\")}'	0	114		44:12:44:91	44			True	
+355	AST	AST_VAR		44		0	114		44:12:44:19	44			True	
+356	AST	string		44	funcStr	0	114		44:12:44:19	44	funcStr		True	
+357	AST	string		44	function() {throw new Error(\"Call a native function unserialized\")}	1	114		44:22:44:91	44			True	
+358	AST	AST_IF_ELEM		43		1	114		43:10:47:11	47			True	
+359	AST	NULL		43		0	114		43::43:				True	
+360	AST	AST_STMT_LIST		45		1	114		45:17:47:11	47			True	
+361	AST	AST_THROW		46	throw new Error('Can\\'t serialize a object with a native function property. Use serialize(obj, true) to ignore the error.');	0	114		46:12:46:136	46			True	
+362	AST	AST_NEW		46		0	114		46:18:46:135	46			True	
+363	AST	AST_NAME	NAME_NOT_FQ	46		0	114		46:18:46:135	46			True	
+364	AST	string		46	Error	0	114		46:22:46:27	46			True	
+365	AST	AST_ARG_LIST		46		1	114		46:18:46:135	46			True	
+366	AST	string		46	Can\\'t serialize a object with a native function property. Use serialize(obj, true) to ignore the error.	0	114		46:28:46:134	46			True	
+367	AST	AST_ASSIGN		49	outputObj[key] = FUNCFLAG + funcStr	2	114		49:8:49:43	49			True	
+368	AST	AST_DIM		49	outputObj[key]	0	114		49:8:49:22	49			True	
+369	AST	AST_VAR		49		0	114		49:8:49:17	49			True	
+370	AST	string		49	outputObj	0	114		49:8:49:17	49	outputObj		True	
+371	AST	AST_VAR		49		1	114		49:18:49:21	49			True	
+372	AST	string		49	key	0	114		49:18:49:21	49	key		True	
+373	AST	AST_BINARY_OP	BINARY_ADD	49	FUNCFLAG + funcStr	1	114		49:25:49:43	49			True	
+374	AST	AST_VAR		49		0	114		49:25:49:33	49			True	
+375	AST	string		49	FUNCFLAG	0	114		49:25:49:33	49	FUNCFLAG		True	
+376	AST	AST_VAR		49		1	114		49:36:49:43	49			True	
+377	AST	string		49	funcStr	0	114		49:36:49:43	49	funcStr		True	
+378	AST	AST_IF_ELEM		40		1	114		40:13:52:7	52			True	
+379	AST	NULL		40		0	114		40::40:				True	
+380	AST	AST_STMT_LIST		50		1	114		50:13:52:7	52			True	
+381	AST	AST_ASSIGN		51	outputObj[key] = obj[key]	0	114		51:8:51:33	51			True	
+382	AST	AST_DIM		51	outputObj[key]	0	114		51:8:51:22	51			True	
+383	AST	AST_VAR		51		0	114		51:8:51:17	51			True	
+384	AST	string		51	outputObj	0	114		51:8:51:17	51	outputObj		True	
+385	AST	AST_VAR		51		1	114		51:18:51:21	51			True	
+386	AST	string		51	key	0	114		51:18:51:21	51	key		True	
+387	AST	AST_DIM		51	obj[key]	1	114		51:25:51:33	51			True	
+388	AST	AST_VAR		51		0	114		51:25:51:28	51			True	
+389	AST	string		51	obj	0	114		51:25:51:28	51	obj		True	
+390	AST	AST_VAR		51		1	114		51:29:51:32	51			True	
+391	AST	string		51	key	0	114		51:29:51:32	51	key		True	
+392	AST	AST_RETURN		56	return (path === '$') ? JSON.stringify(outputObj) : outputObj;	6	114		56:2:56:64	56			True	
+393	AST	AST_CONDITIONAL		56	(path === '$') ? JSON.stringify(outputObj) : outputObj	0	114		56:9:56:63	56			True	
+394	AST	AST_BINARY_OP	BINARY_IS_IDENTICAL	56	path === '$'	0	114		56:10:56:22	56			True	
+395	AST	AST_VAR		56		0	114		56:10:56:14	56			True	
+396	AST	string		56	path	0	114		56:10:56:14	56	path		True	
+397	AST	string		56	$	1	114		56:19:56:22	56			True	
+398	AST	AST_METHOD_CALL		56	JSON.stringify(outputObj)	1	114		56:26:56:51	56			True	
+399	AST	AST_VAR		56		0	114		56:26:56:30	56			True	
+400	AST	string		56	JSON	0	114		56:26:56:30	56	JSON		True	
+401	AST	string		56	stringify	1	114		56:31:56:40	56			True	
+402	AST	AST_ARG_LIST		56	(outputObj)	2	114		56:26:56:51	56			True	
+403	AST	AST_VAR		56		0	114		56:41:56:50	56			True	
+404	AST	string		56	outputObj	0	114		56:41:56:50	56	outputObj		True	
+405	AST	AST_VAR		56		2	114		56:54:56:63	56			True	
+406	AST	string		56	outputObj	0	114		56:54:56:63	56	outputObj		True	
+407	AST	NULL		17		5	114		17::17:				True	
+408	AST	NULL		17		6	114		17::17:				True	
+409	AST	AST_ASSIGN		59	exports.unserialize = function(obj, originObj) {  var isIndex;  if (typeof obj === 'string') {    obj = JSON.parse(obj);    isIndex = true;  }  originObj = originObj || obj;  var circularTasks = [];  var key;  for(key in obj) {    if(obj.hasOwnProperty(key)) {      if(typeof obj[key] === 'object') {        obj[key] = exports.unserialize(obj[key], originObj);      } else if(typeof obj[key] === 'string') {        if(obj[key].indexOf(FUNCFLAG) === 0) {          obj[key] = eval('(' + obj[key].substring(FUNCFLAG.length) + ')');        } else if(obj[key].indexOf(CIRCULARFLAG) === 0) {          obj[key] = obj[key].substring(CIRCULARFLAG.length);          circularTasks.push({obj: obj, key: key});        }      }    }  }  if (isIndex) {    circularTasks.forEach(function(task) {      task.obj[task.key] = getKeyPath(originObj, task.obj[task.key]);    });  }  return obj;}	6	14		59::90:1	90			True	
+410	AST	AST_PROP		59	exports.unserialize	0	14		59::59:19	59			True	
+411	AST	AST_VAR		59		0	14		59::59:7	59			True	
+412	AST	string		59	exports	0	14		59::59:7	59	exports		True	
+413	AST	string		59	unserialize	1	14		59:8:59:19	59			True	
+414	AST	AST_CLOSURE		59		1	14		59:22:90:1	90			True	
+415	Artificial	CFG_FUNC_ENTRY					414						True	
+416	Artificial	CFG_FUNC_EXIT					414						True	
+417	AST	string		59	{anon}	0	414		59::59:				True	
+418	AST	NULL		59		1	414		59::59:				True	
+419	AST	AST_PARAM_LIST		59	obj, originObj	2	414		59:22:90:1	90			True	
+420	AST	AST_PARAM		59	obj	0	414		59::59:				True	
+421	AST	NULL		59	any	0	414		59::59:				True	
+422	AST	string		59	obj	1	414		59:31:59:34	59			True	
+423	AST	NULL		59	any	2	414		59::59:				True	
+424	AST	AST_PARAM		59	originObj	1	414		59::59:				True	
+425	AST	NULL		59	any	0	414		59::59:				True	
+426	AST	string		59	originObj	1	414		59:36:59:45	59			True	
+427	AST	NULL		59	any	2	414		59::59:				True	
+428	AST	NULL		59		3	414		59::59:				True	
+429	AST	AST_STMT_LIST		59		4	414		59:47:90:1	90			True	
+430	AST	AST_ASSIGN		60	isIndex	0	414		60:6:60:13	60			True	
+431	AST	AST_VAR	JS_DECL_VAR	60		0	414		60:6:60:13	60			True	
+432	AST	string		60	isIndex	0	414		60:6:60:13	60	isIndex		True	
+433	AST	AST_IF		61		1	414		61:2:64:3	64			True	
+434	AST	AST_IF_ELEM		61		0	414		61:2:64:3	64			True	
+435	AST	AST_BINARY_OP	BINARY_IS_IDENTICAL	61	typeof obj === 'string'	0	414		61:6:61:29	61			True	
+436	AST	AST_CALL	JS_TYPEOF	61	typeof obj	0	414		61:6:61:16	61			True	
+437	AST	AST_NAME	NAME_NOT_FQ	61		0	414		61:6:61:16	61			True	
+438	AST	string		61	gettype	0	414		61:6:61:16	61			True	
+439	AST	AST_ARG_LIST		61		1	414		61:6:61:16	61			True	
+440	AST	AST_VAR		61		0	414		61:13:61:16	61			True	
+441	AST	string		61	obj	0	414		61:13:61:16	61	obj		True	
+442	AST	string		61	string	1	414		61:21:61:29	61			True	
+443	AST	AST_STMT_LIST		61		1	414		61:31:64:3	64			True	
+444	AST	AST_ASSIGN		62	obj = JSON.parse(obj)	0	414		62:4:62:25	62			True	
+445	AST	AST_VAR		62		0	414		62:4:62:7	62			True	
+446	AST	string		62	obj	0	414		62:4:62:7	62	obj		True	
+447	AST	AST_METHOD_CALL		62	JSON.parse(obj)	1	414		62:10:62:25	62			True	
+448	AST	AST_VAR		62		0	414		62:10:62:14	62			True	
+449	AST	string		62	JSON	0	414		62:10:62:14	62	JSON		True	
+450	AST	string		62	parse	1	414		62:15:62:20	62			True	
+451	AST	AST_ARG_LIST		62	(obj)	2	414		62:10:62:25	62			True	
+452	AST	AST_VAR		62		0	414		62:21:62:24	62			True	
+453	AST	string		62	obj	0	414		62:21:62:24	62	obj		True	
+454	AST	AST_ASSIGN		63	isIndex = true	1	414		63:4:63:18	63			True	
+455	AST	AST_VAR		63		0	414		63:4:63:11	63			True	
+456	AST	string		63	isIndex	0	414		63:4:63:11	63	isIndex		True	
+457	AST	AST_CONST		63	true	1	414		63::63:				True	
+458	AST	AST_NAME	NAME_NOT_FQ	63	true	0	414		63::63:				True	
+459	AST	string		63	true	0	414		63::63:				True	
+460	AST	AST_ASSIGN		65	originObj = originObj || obj	2	414		65:2:65:30	65			True	
+461	AST	AST_VAR		65		0	414		65:2:65:11	65			True	
+462	AST	string		65	originObj	0	414		65:2:65:11	65	originObj		True	
+463	AST	AST_BINARY_OP	BINARY_BOOL_OR	65	originObj || obj	1	414		65:14:65:30	65			True	
+464	AST	AST_VAR		65		0	414		65:14:65:23	65			True	
+465	AST	string		65	originObj	0	414		65:14:65:23	65	originObj		True	
+466	AST	AST_VAR		65		1	414		65:27:65:30	65			True	
+467	AST	string		65	obj	0	414		65:27:65:30	65	obj		True	
+468	AST	AST_ASSIGN		67	circularTasks = []	3	414		67:6:67:24	67			True	
+469	AST	AST_VAR	JS_DECL_VAR	67		0	414		67:6:67:19	67			True	
+470	AST	string		67	circularTasks	0	414		67:6:67:19	67	circularTasks		True	
+471	AST	AST_ARRAY	JS_ARRAY	67	[]	1	414		67:22:67:24	67			True	
+472	AST	AST_ASSIGN		68	key	4	414		68:6:68:9	68			True	
+473	AST	AST_VAR	JS_DECL_VAR	68		0	414		68:6:68:9	68			True	
+474	AST	string		68	key	0	414		68:6:68:9	68	key		True	
+475	AST	AST_FOREACH	JS_FOR_IN	69		5	414		69:2:82:3	82			True	
+476	AST	AST_VAR		69		0	414		69:13:69:16	69			True	
+477	AST	string		69	obj	0	414		69:13:69:16	69	obj		True	
+478	AST	NULL		69		1	414		69::69:				True	
+479	AST	AST_VAR		69		2	414		69::69:				True	
+480	AST	string		69	key	0	414		69::69:		key		True	
+481	AST	AST_STMT_LIST		69		3	414		69:18:82:3	82			True	
+482	AST	AST_IF		70		0	414		70:4:81:5	81			True	
+483	AST	AST_IF_ELEM		70		0	414		70:4:81:5	81			True	
+484	AST	AST_METHOD_CALL		70	obj.hasOwnProperty(key)	0	414		70:7:70:30	70			True	
+485	AST	AST_VAR		70		0	414		70:7:70:10	70			True	
+486	AST	string		70	obj	0	414		70:7:70:10	70	obj		True	
+487	AST	string		70	hasOwnProperty	1	414		70:11:70:25	70			True	
+488	AST	AST_ARG_LIST		70	(key)	2	414		70:7:70:30	70			True	
+489	AST	AST_VAR		70		0	414		70:26:70:29	70			True	
+490	AST	string		70	key	0	414		70:26:70:29	70	key		True	
+491	AST	AST_STMT_LIST		70		1	414		70:32:81:5	81			True	
+492	AST	AST_IF		71		0	414		71:6:80:7	80			True	
+493	AST	AST_IF_ELEM		71		0	414		71:6:80:7	80			True	
+494	AST	AST_BINARY_OP	BINARY_IS_IDENTICAL	71	typeof obj[key] === 'object'	0	414		71:9:71:37	71			True	
+495	AST	AST_CALL	JS_TYPEOF	71	typeof obj[key]	0	414		71:9:71:24	71			True	
+496	AST	AST_NAME	NAME_NOT_FQ	71		0	414		71:9:71:24	71			True	
+497	AST	string		71	gettype	0	414		71:9:71:24	71			True	
+498	AST	AST_ARG_LIST		71		1	414		71:9:71:24	71			True	
+499	AST	AST_DIM		71	obj[key]	0	414		71:16:71:24	71			True	
+500	AST	AST_VAR		71		0	414		71:16:71:19	71			True	
+501	AST	string		71	obj	0	414		71:16:71:19	71	obj		True	
+502	AST	AST_VAR		71		1	414		71:20:71:23	71			True	
+503	AST	string		71	key	0	414		71:20:71:23	71	key		True	
+504	AST	string		71	object	1	414		71:29:71:37	71			True	
+505	AST	AST_STMT_LIST		71		1	414		71:39:73:7	73			True	
+506	AST	AST_ASSIGN		72	obj[key] = exports.unserialize(obj[key], originObj)	0	414		72:8:72:59	72			True	
+507	AST	AST_DIM		72	obj[key]	0	414		72:8:72:16	72			True	
+508	AST	AST_VAR		72		0	414		72:8:72:11	72			True	
+509	AST	string		72	obj	0	414		72:8:72:11	72	obj		True	
+510	AST	AST_VAR		72		1	414		72:12:72:15	72			True	
+511	AST	string		72	key	0	414		72:12:72:15	72	key		True	
+512	AST	AST_METHOD_CALL		72	exports.unserialize(obj[key], originObj)	1	414		72:19:72:59	72			True	
+513	AST	AST_VAR		72		0	414		72:19:72:26	72			True	
+514	AST	string		72	exports	0	414		72:19:72:26	72	exports		True	
+515	AST	string		72	unserialize	1	414		72:27:72:38	72			True	
+516	AST	AST_ARG_LIST		72	(obj[key], originObj)	2	414		72:19:72:59	72			True	
+517	AST	AST_DIM		72	obj[key]	0	414		72:39:72:47	72			True	
+518	AST	AST_VAR		72		0	414		72:39:72:42	72			True	
+519	AST	string		72	obj	0	414		72:39:72:42	72	obj		True	
+520	AST	AST_VAR		72		1	414		72:43:72:46	72			True	
+521	AST	string		72	key	0	414		72:43:72:46	72	key		True	
+522	AST	AST_VAR		72		1	414		72:49:72:58	72			True	
+523	AST	string		72	originObj	0	414		72:49:72:58	72	originObj		True	
+524	AST	AST_IF_ELEM		71		1	414		71:6:80:7	80			True	
+525	AST	NULL		71		0	414		71::71:				True	
+526	AST	AST_STMT_LIST		73		1	414		73:13:80:7	80			True	
+527	AST	AST_IF		73		0	414		73:13:80:7	80			True	
+528	AST	AST_IF_ELEM		73		0	414		73:13:80:7	80			True	
+529	AST	AST_BINARY_OP	BINARY_IS_IDENTICAL	73	typeof obj[key] === 'string'	0	414		73:16:73:44	73			True	
+530	AST	AST_CALL	JS_TYPEOF	73	typeof obj[key]	0	414		73:16:73:31	73			True	
+531	AST	AST_NAME	NAME_NOT_FQ	73		0	414		73:16:73:31	73			True	
+532	AST	string		73	gettype	0	414		73:16:73:31	73			True	
+533	AST	AST_ARG_LIST		73		1	414		73:16:73:31	73			True	
+534	AST	AST_DIM		73	obj[key]	0	414		73:23:73:31	73			True	
+535	AST	AST_VAR		73		0	414		73:23:73:26	73			True	
+536	AST	string		73	obj	0	414		73:23:73:26	73	obj		True	
+537	AST	AST_VAR		73		1	414		73:27:73:30	73			True	
+538	AST	string		73	key	0	414		73:27:73:30	73	key		True	
+539	AST	string		73	string	1	414		73:36:73:44	73			True	
+540	AST	AST_STMT_LIST		73		1	414		73:46:80:7	80			True	
+541	AST	AST_IF		74		0	414		74:8:79:9	79			True	
+542	AST	AST_IF_ELEM		74		0	414		74:8:79:9	79			True	
+543	AST	AST_BINARY_OP	BINARY_IS_IDENTICAL	74	obj[key].indexOf(FUNCFLAG) === 0	0	414		74:11:74:43	74			True	
+544	AST	AST_METHOD_CALL		74	obj[key].indexOf(FUNCFLAG)	0	414		74:11:74:37	74			True	
+545	AST	AST_DIM		74	obj[key]	0	414		74:11:74:19	74			True	
+546	AST	AST_VAR		74		0	414		74:11:74:14	74			True	
+547	AST	string		74	obj	0	414		74:11:74:14	74	obj		True	
+548	AST	AST_VAR		74		1	414		74:15:74:18	74			True	
+549	AST	string		74	key	0	414		74:15:74:18	74	key		True	
+550	AST	string		74	indexOf	1	414		74:20:74:27	74			True	
+551	AST	AST_ARG_LIST		74	(FUNCFLAG)	2	414		74:11:74:37	74			True	
+552	AST	AST_VAR		74		0	414		74:28:74:36	74			True	
+553	AST	string		74	FUNCFLAG	0	414		74:28:74:36	74	FUNCFLAG		True	
+554	AST	integer		74	0	1	414		74:42:74:43	74			True	
+555	AST	AST_STMT_LIST		74		1	414		74:45:76:9	76			True	
+556	AST	AST_ASSIGN		75	obj[key] = eval('(' + obj[key].substring(FUNCFLAG.length) + ')')	0	414		75:10:75:74	75			True	
+557	AST	AST_DIM		75	obj[key]	0	414		75:10:75:18	75			True	
+558	AST	AST_VAR		75		0	414		75:10:75:13	75			True	
+559	AST	string		75	obj	0	414		75:10:75:13	75	obj		True	
+560	AST	AST_VAR		75		1	414		75:14:75:17	75			True	
+561	AST	string		75	key	0	414		75:14:75:17	75	key		True	
+562	AST	AST_CALL		75	eval('(' + obj[key].substring(FUNCFLAG.length) + ')')	1	414		75:21:75:74	75			True	
+563	AST	AST_NAME	NAME_NOT_FQ	75		0	414		75:21:75:74	75			True	
+564	AST	string		75	eval	0	414		75:21:75:25	75			True	
+565	AST	AST_ARG_LIST		75		1	414		75:21:75:74	75			True	
+566	AST	AST_BINARY_OP	BINARY_ADD	75	'(' + obj[key].substring(FUNCFLAG.length) + ')'	0	414		75:26:75:73	75			True	
+567	AST	AST_BINARY_OP	BINARY_ADD	75	'(' + obj[key].substring(FUNCFLAG.length)	0	414		75:26:75:67	75			True	
+568	AST	string		75	(	0	414		75:26:75:29	75			True	
+569	AST	AST_METHOD_CALL		75	obj[key].substring(FUNCFLAG.length)	1	414		75:32:75:67	75			True	
+570	AST	AST_DIM		75	obj[key]	0	414		75:32:75:40	75			True	
+571	AST	AST_VAR		75		0	414		75:32:75:35	75			True	
+572	AST	string		75	obj	0	414		75:32:75:35	75	obj		True	
+573	AST	AST_VAR		75		1	414		75:36:75:39	75			True	
+574	AST	string		75	key	0	414		75:36:75:39	75	key		True	
+575	AST	string		75	substring	1	414		75:41:75:50	75			True	
+576	AST	AST_ARG_LIST		75	(FUNCFLAG.length)	2	414		75:32:75:67	75			True	
+577	AST	AST_PROP		75	FUNCFLAG.length	0	414		75:51:75:66	75			True	
+578	AST	AST_VAR		75		0	414		75:51:75:59	75			True	
+579	AST	string		75	FUNCFLAG	0	414		75:51:75:59	75	FUNCFLAG		True	
+580	AST	string		75	length	1	414		75:60:75:66	75			True	
+581	AST	string		75	)	1	414		75:70:75:73	75			True	
+582	AST	AST_IF_ELEM		74		1	414		74:8:79:9	79			True	
+583	AST	NULL		74		0	414		74::74:				True	
+584	AST	AST_STMT_LIST		76		1	414		76:15:79:9	79			True	
+585	AST	AST_IF		76		0	414		76:15:79:9	79			True	
+586	AST	AST_IF_ELEM		76		0	414		76:15:79:9	79			True	
+587	AST	AST_BINARY_OP	BINARY_IS_IDENTICAL	76	obj[key].indexOf(CIRCULARFLAG) === 0	0	414		76:18:76:54	76			True	
+588	AST	AST_METHOD_CALL		76	obj[key].indexOf(CIRCULARFLAG)	0	414		76:18:76:48	76			True	
+589	AST	AST_DIM		76	obj[key]	0	414		76:18:76:26	76			True	
+590	AST	AST_VAR		76		0	414		76:18:76:21	76			True	
+591	AST	string		76	obj	0	414		76:18:76:21	76	obj		True	
+592	AST	AST_VAR		76		1	414		76:22:76:25	76			True	
+593	AST	string		76	key	0	414		76:22:76:25	76	key		True	
+594	AST	string		76	indexOf	1	414		76:27:76:34	76			True	
+595	AST	AST_ARG_LIST		76	(CIRCULARFLAG)	2	414		76:18:76:48	76			True	
+596	AST	AST_VAR		76		0	414		76:35:76:47	76			True	
+597	AST	string		76	CIRCULARFLAG	0	414		76:35:76:47	76	CIRCULARFLAG		True	
+598	AST	integer		76	0	1	414		76:53:76:54	76			True	
+599	AST	AST_STMT_LIST		76		1	414		76:56:79:9	79			True	
+600	AST	AST_ASSIGN		77	obj[key] = obj[key].substring(CIRCULARFLAG.length)	0	414		77:10:77:60	77			True	
+601	AST	AST_DIM		77	obj[key]	0	414		77:10:77:18	77			True	
+602	AST	AST_VAR		77		0	414		77:10:77:13	77			True	
+603	AST	string		77	obj	0	414		77:10:77:13	77	obj		True	
+604	AST	AST_VAR		77		1	414		77:14:77:17	77			True	
+605	AST	string		77	key	0	414		77:14:77:17	77	key		True	
+606	AST	AST_METHOD_CALL		77	obj[key].substring(CIRCULARFLAG.length)	1	414		77:21:77:60	77			True	
+607	AST	AST_DIM		77	obj[key]	0	414		77:21:77:29	77			True	
+608	AST	AST_VAR		77		0	414		77:21:77:24	77			True	
+609	AST	string		77	obj	0	414		77:21:77:24	77	obj		True	
+610	AST	AST_VAR		77		1	414		77:25:77:28	77			True	
+611	AST	string		77	key	0	414		77:25:77:28	77	key		True	
+612	AST	string		77	substring	1	414		77:30:77:39	77			True	
+613	AST	AST_ARG_LIST		77	(CIRCULARFLAG.length)	2	414		77:21:77:60	77			True	
+614	AST	AST_PROP		77	CIRCULARFLAG.length	0	414		77:40:77:59	77			True	
+615	AST	AST_VAR		77		0	414		77:40:77:52	77			True	
+616	AST	string		77	CIRCULARFLAG	0	414		77:40:77:52	77	CIRCULARFLAG		True	
+617	AST	string		77	length	1	414		77:53:77:59	77			True	
+618	AST	AST_METHOD_CALL		78	circularTasks.push({obj: obj, key: key})	1	414		78:10:78:50	78			True	
+619	AST	AST_VAR		78		0	414		78:10:78:23	78			True	
+620	AST	string		78	circularTasks	0	414		78:10:78:23	78	circularTasks		True	
+621	AST	string		78	push	1	414		78:24:78:28	78			True	
+622	AST	AST_ARG_LIST		78	({obj: obj, key: key})	2	414		78:10:78:50	78			True	
+623	AST	AST_ARRAY	JS_OBJECT	78		0	414		78:29:78:49	78			True	
+624	AST	AST_ARRAY_ELEM		78		0	414		78:30:78:38	78			True	
+625	AST	AST_VAR		78		0	414		78:35:78:38	78			True	
+626	AST	string		78	obj	0	414		78:35:78:38	78	obj		True	
+627	AST	string		78	obj	1	414		78:30:78:33	78			True	
+628	AST	AST_ARRAY_ELEM		78		1	414		78:40:78:48	78			True	
+629	AST	AST_VAR		78		0	414		78:45:78:48	78			True	
+630	AST	string		78	key	0	414		78:45:78:48	78	key		True	
+631	AST	string		78	key	1	414		78:40:78:43	78			True	
+632	AST	AST_IF		84		6	414		84:2:88:3	88			True	
+633	AST	AST_IF_ELEM		84		0	414		84:2:88:3	88			True	
+634	AST	AST_VAR		84		0	414		84:6:84:13	84			True	
+635	AST	string		84	isIndex	0	414		84:6:84:13	84	isIndex		True	
+636	AST	AST_STMT_LIST		84		1	414		84:15:88:3	88			True	
+637	AST	AST_METHOD_CALL		85		0	414		85:4:87:6	87			True	
+638	AST	AST_VAR		85		0	414		85:4:85:17	85			True	
+639	AST	string		85	circularTasks	0	414		85:4:85:17	85	circularTasks		True	
+640	AST	string		85	forEach	1	414		85:18:85:25	85			True	
+641	AST	AST_ARG_LIST		85		2	414		85:4:87:6	87			True	
+642	AST	AST_CLOSURE		85		0	414		85:26:87:5	87			True	
+643	Artificial	CFG_FUNC_ENTRY					642						True	
+644	Artificial	CFG_FUNC_EXIT					642						True	
+645	AST	string		85	{anon}	0	642		85::85:				True	
+646	AST	NULL		85		1	642		85::85:				True	
+647	AST	AST_PARAM_LIST		85	task	2	642		85:26:87:5	87			True	
+648	AST	AST_PARAM		85	task	0	642		85::85:				True	
+649	AST	NULL		85	any	0	642		85::85:				True	
+650	AST	string		85	task	1	642		85:35:85:39	85			True	
+651	AST	NULL		85	any	2	642		85::85:				True	
+652	AST	NULL		85		3	642		85::85:				True	
+653	AST	AST_STMT_LIST		85		4	642		85:41:87:5	87			True	
+654	AST	AST_ASSIGN		86	task.obj[task.key] = getKeyPath(originObj, task.obj[task.key])	0	642		86:6:86:68	86			True	
+655	AST	AST_DIM		86	task.obj[task.key]	0	642		86:6:86:24	86			True	
+656	AST	AST_PROP		86	task.obj	0	642		86:6:86:14	86			True	
+657	AST	AST_VAR		86		0	642		86:6:86:10	86			True	
+658	AST	string		86	task	0	642		86:6:86:10	86	task		True	
+659	AST	string		86	obj	1	642		86:11:86:14	86			True	
+660	AST	AST_PROP		86	task.key	1	642		86:15:86:23	86			True	
+661	AST	AST_VAR		86		0	642		86:15:86:19	86			True	
+662	AST	string		86	task	0	642		86:15:86:19	86	task		True	
+663	AST	string		86	key	1	642		86:20:86:23	86			True	
+664	AST	AST_CALL		86	getKeyPath(originObj, task.obj[task.key])	1	642		86:27:86:68	86			True	
+665	AST	AST_NAME	NAME_NOT_FQ	86		0	642		86:27:86:68	86			True	
+666	AST	string		86	getKeyPath	0	642		86:27:86:37	86			True	
+667	AST	AST_ARG_LIST		86	(originObj, task.obj[task.key])	1	642		86:27:86:68	86			True	
+668	AST	AST_VAR		86		0	642		86:38:86:47	86			True	
+669	AST	string		86	originObj	0	642		86:38:86:47	86	originObj		True	
+670	AST	AST_DIM		86	task.obj[task.key]	1	642		86:49:86:67	86			True	
+671	AST	AST_PROP		86	task.obj	0	642		86:49:86:57	86			True	
+672	AST	AST_VAR		86		0	642		86:49:86:53	86			True	
+673	AST	string		86	task	0	642		86:49:86:53	86	task		True	
+674	AST	string		86	obj	1	642		86:54:86:57	86			True	
+675	AST	AST_PROP		86	task.key	1	642		86:58:86:66	86			True	
+676	AST	AST_VAR		86		0	642		86:58:86:62	86			True	
+677	AST	string		86	task	0	642		86:58:86:62	86	task		True	
+678	AST	string		86	key	1	642		86:63:86:66	86			True	
+679	AST	NULL		85		5	642		85::85:				True	
+680	AST	NULL		85		6	642		85::85:				True	
+681	AST	AST_RETURN		89	return obj;	7	414		89:2:89:13	89			True	
+682	AST	AST_VAR		89		0	414		89:9:89:12	89			True	
+683	AST	string		89	obj	0	414		89:9:89:12	89	obj		True	
+684	AST	NULL		59		5	414		59::59:				True	
+685	AST	NULL		59		6	414		59::59:				True	
+686	Scope	BASE_SCOPE									Base		True	
+687	Name	NAMENODE									global		True	
+688	Object	object											True	
+689	Name	NAMENODE									null		True	
+690	Object	object			null								True	
+691	Name	NAMENODE									null		True	
+692	Object	boolean			true								True	
+693	Name	NAMENODE									true		True	
+694	Name	NAMENODE									true		True	
+695	Object	boolean			false								True	
+696	Name	NAMENODE									false		True	
+697	Name	NAMENODE									false		True	
+1836	Object	undefined			undefined								True	
+1837	Name	NAMENODE									undefined		True	
+1838	Name	NAMENODE									undefined		True	
+1839	Object	number			Infinity								True	
+1840	Name	NAMENODE									Infinity		True	
+1841	Name	NAMENODE									Infinity		True	
+1842	Object	number			-Infinity								True	
+1843	Object	number			nan								True	
+1844	Name	NAMENODE									NaN		True	
+1845	Name	NAMENODE									NaN		True	
+1846	Object	function									stdin		True	
+1847	Name	NAMENODE									prototype		True	
+1848	Object	object											True	
+1849	Name	NAMENODE									__proto__		True	
+1850	Name	NAMENODE									constructor		True	
+1851	Name	NAMENODE									__proto__		True	
+1852	Name	NAMENODE									constructor		True	
+1853	Name	NAMENODE									stdin		True	
+1854	Name	NAMENODE									stdin		True	
+1855	Name	NAMENODE									name		True	
+1856	Object	string			stdin								True	
+1857	Name	NAMENODE									__proto__		True	
+1858	Name	NAMENODE									constructor		True	
+1859	Name	NAMENODE									length		True	
+1860	Object	number			5								True	
+1861	Name	NAMENODE									length		True	
+1862	Object	number			0								True	
+1863	Scope	FILE_SCOPE									File1:0		True	
+1864	Name	NAMENODE									module		True	
+1865	Object	object											True	
+1866	Name	NAMENODE									__proto__		True	
+1867	Name	NAMENODE									constructor		True	
+1868	Name	NAMENODE									exports		True	
+1869	Object	object											True	
+1870	Name	NAMENODE									__proto__		True	
+1871	Name	NAMENODE									constructor		True	
+1872	Name	NAMENODE									exports		True	
+1873	Name	NAMENODE									this		True	
+1874	Scope	BLOCK_SCOPE									Block4:0		True	
+1875	Name	NAMENODE									main_func		True	
+1876	Object	function									/home/alex/ODGen/node_modules/node-serialize/lib/serialize.js		True	
+1877	Name	NAMENODE									prototype		True	
+1878	Object	object											True	
+1879	Name	NAMENODE									__proto__		True	
+1880	Name	NAMENODE									constructor		True	
+1881	Name	NAMENODE									__proto__		True	
+1882	Name	NAMENODE									constructor		True	
+1883	Name	NAMENODE									/home/alex/ODGen/node_modules/node-serialize/lib/serialize.js		True	
+1884	Name	NAMENODE									/home/alex/ODGen/node_modules/node-serialize/lib/serialize.js		True	
+1885	Name	NAMENODE									name		True	
+1886	Object	string			/home/alex/ODGen/node_modules/node-serialize/lib/serialize.js								True	
+1887	Name	NAMENODE									__proto__		True	
+1888	Name	NAMENODE									constructor		True	
+1889	Name	NAMENODE									length		True	
+1890	Object	number			61								True	
+1891	Name	NAMENODE									length		True	
+1892	Object	number			0								True	
+1893	Scope	FILE_SCOPE									File14:0		True	
+1894	Name	NAMENODE									module		True	
+1895	Object	object											True	
+1896	Name	NAMENODE									__proto__		True	
+1897	Name	NAMENODE									constructor		True	
+1898	Name	NAMENODE									exports		True	
+1899	Object	object											True	
+1900	Name	NAMENODE									__proto__		True	
+1901	Name	NAMENODE									constructor		True	
+1902	Name	NAMENODE									exports		True	
+1903	Name	NAMENODE									this		True	
+1904	Scope	BLOCK_SCOPE									Block17:0		True	
+1905	Name	NAMENODE									FUNCFLAG		True	
+1906	Name	NAMENODE									CIRCULARFLAG		True	
+1907	Name	NAMENODE									KEYPATHSEPARATOR		True	
+1908	Name	NAMENODE									ISNATIVEFUNC		True	
+1909	Name	NAMENODE									getKeyPath		True	
+1910	Object	string			_$$ND_FUNC$$_								True	
+1911	Name	NAMENODE									__proto__		True	
+1912	Name	NAMENODE									constructor		True	
+1913	Name	NAMENODE									length		True	
+1914	Object	number			13								True	
+1915	Object	string			_$$ND_CC$$_								True	
+1916	Name	NAMENODE									__proto__		True	
+1917	Name	NAMENODE									constructor		True	
+1918	Name	NAMENODE									length		True	
+1919	Object	number			11								True	
+1920	Object	string			_$$.$$_								True	
+1921	Name	NAMENODE									__proto__		True	
+1922	Name	NAMENODE									constructor		True	
+1923	Name	NAMENODE									length		True	
+1924	Object	number			7								True	
+1925	Object	object			/^function\\s*[^(]*\\(.*\\)\\s*\\{\\s*\\[native code\\]\\s*\\}$/								True	
+1926	Name	NAMENODE									__proto__		True	
+1927	Object	function									{anon}		True	
+1928	Name	NAMENODE									prototype		True	
+1929	Object	object											True	
+1930	Name	NAMENODE									__proto__		True	
+1931	Name	NAMENODE									constructor		True	
+1932	Name	NAMENODE									__proto__		True	
+1933	Name	NAMENODE									constructor		True	
+1934	Name	NAMENODE									length		True	
+1935	Object	number			2								True	
+1936	Object	function									{anon}		True	
+1937	Name	NAMENODE									prototype		True	
+1938	Object	object											True	
+1939	Name	NAMENODE									__proto__		True	
+1940	Name	NAMENODE									constructor		True	
+1941	Name	NAMENODE									__proto__		True	
+1942	Name	NAMENODE									constructor		True	
+1943	Name	NAMENODE									length		True	
+1944	Object	number			5								True	
+1945	Name	NAMENODE									serialize		True	
+1946	Object	function									{anon}		True	
+1947	Name	NAMENODE									prototype		True	
+1948	Object	object											True	
+1949	Name	NAMENODE									__proto__		True	
+1950	Name	NAMENODE									constructor		True	
+1951	Name	NAMENODE									__proto__		True	
+1952	Name	NAMENODE									constructor		True	
+1953	Name	NAMENODE									length		True	
+1954	Object	number			2								True	
+1955	Name	NAMENODE									unserialize		True	

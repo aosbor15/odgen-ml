@@ -1,0 +1,221 @@
+collection_js.csv
+collection_js.csv
+Epoch 1/10 | Train Loss: 0.6931 | Val Loss: 0.6932
+Epoch 2/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 3/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 4/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 5/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 6/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 7/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 8/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 9/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 10/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+node-oojs.csv
+Epoch 1/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 2/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 3/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 4/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 5/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 6/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 7/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 8/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 9/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 10/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+codecov.csv
+Epoch 1/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 2/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 3/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 4/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 5/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 6/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 7/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 8/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 9/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 10/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+node-windows.csv
+Epoch 1/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 2/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 3/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 4/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 5/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 6/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 7/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 8/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 9/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 10/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+node-notifier.csv
+Epoch 1/10 | Train Loss: 1.3133 | Val Loss: 1.3133
+Epoch 2/10 | Train Loss: 1.3133 | Val Loss: 1.3133
+Epoch 3/10 | Train Loss: 1.3133 | Val Loss: 1.3133
+Epoch 4/10 | Train Loss: 1.3133 | Val Loss: 1.3133
+Epoch 5/10 | Train Loss: 1.3133 | Val Loss: 1.3133
+Epoch 6/10 | Train Loss: 1.3133 | Val Loss: 1.3133
+Epoch 7/10 | Train Loss: 1.3133 | Val Loss: 1.3133
+Epoch 8/10 | Train Loss: 1.3133 | Val Loss: 1.3133
+Epoch 9/10 | Train Loss: 1.3133 | Val Loss: 1.3133
+Epoch 10/10 | Train Loss: 1.3133 | Val Loss: 1.3133
+node-ps.csv
+Epoch 1/10 | Train Loss: 1.2429 | Val Loss: 1.2363
+Epoch 2/10 | Train Loss: 0.7796 | Val Loss: 0.7737
+Epoch 3/10 | Train Loss: 0.6933 | Val Loss: 0.6934
+Epoch 4/10 | Train Loss: 0.6934 | Val Loss: 0.6933
+Epoch 5/10 | Train Loss: 0.6933 | Val Loss: 0.6933
+Epoch 6/10 | Train Loss: 0.6932 | Val Loss: 0.6933
+Epoch 7/10 | Train Loss: 0.6932 | Val Loss: 0.6932
+Epoch 8/10 | Train Loss: 0.6932 | Val Loss: 0.6932
+Epoch 9/10 | Train Loss: 0.6932 | Val Loss: 0.6932
+Epoch 10/10 | Train Loss: 0.6932 | Val Loss: 0.6932
+node-serialize.csv
+Epoch 1/10 | Train Loss: 0.7193 | Val Loss: 0.7066
+Epoch 2/10 | Train Loss: 0.6977 | Val Loss: 0.6963
+Epoch 3/10 | Train Loss: 0.6942 | Val Loss: 0.6953
+Epoch 4/10 | Train Loss: 0.7011 | Val Loss: 0.6942
+Epoch 5/10 | Train Loss: 0.6957 | Val Loss: 0.6940
+Epoch 6/10 | Train Loss: 0.6939 | Val Loss: 0.6938
+Epoch 7/10 | Train Loss: 0.6974 | Val Loss: 0.6937
+Epoch 8/10 | Train Loss: 0.6942 | Val Loss: 0.6936
+Epoch 9/10 | Train Loss: 0.6941 | Val Loss: 0.6939
+Epoch 10/10 | Train Loss: 0.6942 | Val Loss: 0.6935
+nodejs-traceroute.csv
+Epoch 1/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 2/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 3/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 4/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 5/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 6/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 7/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 8/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 9/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 10/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+node-forge.csv
+Epoch 1/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 2/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 3/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 4/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 5/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 6/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 7/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 8/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 9/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 10/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+node-latex-pdf.csv
+Epoch 1/10 | Train Loss: 0.8014 | Val Loss: 0.7933
+Epoch 2/10 | Train Loss: 0.7303 | Val Loss: 0.7370
+Epoch 3/10 | Train Loss: 0.7129 | Val Loss: 0.7185
+Epoch 4/10 | Train Loss: 0.7021 | Val Loss: 0.7091
+Epoch 5/10 | Train Loss: 0.7017 | Val Loss: 0.7042
+Epoch 6/10 | Train Loss: 0.6951 | Val Loss: 0.7011
+Epoch 7/10 | Train Loss: 0.6953 | Val Loss: 0.6988
+Epoch 8/10 | Train Loss: 0.6936 | Val Loss: 0.6971
+Epoch 9/10 | Train Loss: 0.6945 | Val Loss: 0.6959
+Epoch 10/10 | Train Loss: 0.6954 | Val Loss: 0.6952
+collection_js.csv
+Epoch 1/10 | Train Loss: 0.6931 | Val Loss: 0.6933
+Epoch 2/10 | Train Loss: 0.6931 | Val Loss: 0.6933
+Epoch 3/10 | Train Loss: 0.6931 | Val Loss: 0.6933
+Epoch 4/10 | Train Loss: 0.6931 | Val Loss: 0.6933
+Epoch 5/10 | Train Loss: 0.6931 | Val Loss: 0.6932
+Epoch 6/10 | Train Loss: 0.6931 | Val Loss: 0.6932
+Epoch 7/10 | Train Loss: 0.6931 | Val Loss: 0.6932
+Epoch 8/10 | Train Loss: 0.6931 | Val Loss: 0.6932
+Epoch 9/10 | Train Loss: 0.6931 | Val Loss: 0.6932
+Epoch 10/10 | Train Loss: 0.6931 | Val Loss: 0.6932
+node-oojs.csv
+Epoch 1/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 2/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 3/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 4/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 5/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 6/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 7/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 8/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 9/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 10/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+codecov.csv
+Epoch 1/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 2/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 3/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 4/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 5/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 6/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 7/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 8/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 9/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 10/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+node-windows.csv
+Epoch 1/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 2/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 3/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 4/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 5/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 6/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 7/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 8/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 9/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 10/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+node-notifier.csv
+Epoch 1/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 2/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 3/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 4/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 5/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 6/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 7/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 8/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 9/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 10/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+node-ps.csv
+Epoch 1/10 | Train Loss: 0.6932 | Val Loss: 0.6932
+Epoch 2/10 | Train Loss: 0.6932 | Val Loss: 0.6932
+Epoch 3/10 | Train Loss: 0.6932 | Val Loss: 0.6932
+Epoch 4/10 | Train Loss: 0.6931 | Val Loss: 0.6932
+Epoch 5/10 | Train Loss: 0.6931 | Val Loss: 0.6932
+Epoch 6/10 | Train Loss: 0.6931 | Val Loss: 0.6932
+Epoch 7/10 | Train Loss: 0.6932 | Val Loss: 0.6932
+Epoch 8/10 | Train Loss: 0.6932 | Val Loss: 0.6932
+Epoch 9/10 | Train Loss: 0.6931 | Val Loss: 0.6932
+Epoch 10/10 | Train Loss: 0.6931 | Val Loss: 0.6932
+node-serialize.csv
+Epoch 1/10 | Train Loss: 0.6933 | Val Loss: 0.6943
+Epoch 2/10 | Train Loss: 0.6932 | Val Loss: 0.6936
+Epoch 3/10 | Train Loss: 0.6956 | Val Loss: 0.6933
+Epoch 4/10 | Train Loss: 0.6947 | Val Loss: 0.6933
+Epoch 5/10 | Train Loss: 0.6934 | Val Loss: 0.6932
+Epoch 6/10 | Train Loss: 0.6934 | Val Loss: 0.6932
+Epoch 7/10 | Train Loss: 0.6933 | Val Loss: 0.6932
+Epoch 8/10 | Train Loss: 0.6934 | Val Loss: 0.6932
+Epoch 9/10 | Train Loss: 0.6931 | Val Loss: 0.6932
+Epoch 10/10 | Train Loss: 0.6934 | Val Loss: 0.6932
+nodejs-traceroute.csv
+Epoch 1/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 2/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 3/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 4/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 5/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 6/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 7/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 8/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 9/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 10/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+node-forge.csv
+Epoch 1/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 2/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 3/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 4/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 5/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 6/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 7/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 8/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 9/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+Epoch 10/10 | Train Loss: 0.6931 | Val Loss: 0.6931
+node-latex-pdf.csv
+Epoch 1/10 | Train Loss: 0.6962 | Val Loss: 0.6958
+Epoch 2/10 | Train Loss: 0.6937 | Val Loss: 0.6941
+Epoch 3/10 | Train Loss: 0.6936 | Val Loss: 0.6937
+Epoch 4/10 | Train Loss: 0.6938 | Val Loss: 0.6935
+Epoch 5/10 | Train Loss: 0.6935 | Val Loss: 0.6934
+Epoch 6/10 | Train Loss: 0.6933 | Val Loss: 0.6933
+Epoch 7/10 | Train Loss: 0.6935 | Val Loss: 0.6933
+Epoch 8/10 | Train Loss: 0.6935 | Val Loss: 0.6933
+Epoch 9/10 | Train Loss: 0.6932 | Val Loss: 0.6932
+Epoch 10/10 | Train Loss: 0.6932 | Val Loss: 0.6932

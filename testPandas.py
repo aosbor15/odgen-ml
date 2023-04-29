@@ -7,7 +7,7 @@ if len(sys.argv) < 2:
 
 filename = sys.argv[1]
 
-node_df = pd.read_table('nodes.csv', header=0)
+node_df = pd.read_table('nodes.csv', header=0, low_memory=False)
 #adj_list = {id: [] for id in node_df['id:ID']}
 edge_df = pd.read_table('rels.csv', header=0)
 #for i, row in edge_df.iterrows():

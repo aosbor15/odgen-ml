@@ -23,7 +23,7 @@ graph_df.fillna({'lineno:int': -1, 'endlineno:int': -1, 'childnum:int': -1}, inp
 le = LabelEncoder()
 graph_df['edge_type'] = le.fit_transform(graph_df['edge_type'])
 graph_df['source_type'] = le.fit_transform(graph_df['source_type'])
-#graph_df['code'] = le.fit_transform(graph_df['code'])
+graph_df['code'] = le.fit_transform(graph_df['code'])
 #looks like this is NaN for almost every entry?
 #graph_df['classname'] = le.fit_transform(graph_df['classname'])
 graph_df['source_name'] = le.fit_transform(graph_df['source_name'])
@@ -32,8 +32,7 @@ graph_df['source_name'] = le.fit_transform(graph_df['source_name'])
 graph_df.to_csv('processed_csv/p-'+filename, index=False)
 
 # Define features and target
-#features = graph_df[['source', 'dest', 'edge_type', 'source_name', 'source_type', 'lineno:int', 'endlineno:int', 'childnum:int']].astype('float32').to_numpy()
-features = graph_df[['source', 'dest', 'source_name', 'source_type']].astype('float32').to_numpy()
+features = graph_df[['source', 'dest', 'edge_type', 'source_name', 'source_type', 'code', 'lineno:int', 'endlineno:int', 'childnum:int']].astype('float32').to_numpy()
 
 target = graph_df['tainted'].astype('float32').to_numpy()
 # Split the data into training and validation sets
